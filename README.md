@@ -1,11 +1,10 @@
-# MyBookShelf ([my-book-shelf.com](http://my-book-shelf.com))
+# MyBookShelf Web App ([my-book-shelf.com](http://my-book-shelf.com))
 
-Welcome to **MyBookShelf**, your ultimate book management and reading companion! Whether you're an avid reader, a casual book lover, or someone looking to dive into the world of literature, MyBookShelf offers a comprehensive suite of features to enhance your reading experience.
+React frontend for **MyBookShelf**, your book management and reading companion.
 
 <img width="1680" alt="image" src="https://github.com/user-attachments/assets/5d3cb778-a689-40ee-ad5e-30b6321376de">
 
 <img width="1680" alt="image" src="https://github.com/user-attachments/assets/4e955660-153a-44b9-96f1-b4ab1e078c4d">
-
 
 ## Key Features
 
@@ -19,45 +18,55 @@ Welcome to **MyBookShelf**, your ultimate book management and reading companion!
 - **Bestsellers & New Releases:** Explore popular books and stay updated with the latest releases.
 
 ### ✍️ Share Book Reviews & Quotes
-- **Write Reviews:** Share your thoughts on the books you've read with the community.
+- **Write Reviews:** Share your thoughts on the books you've read.
 - **Highlight Quotes:** Capture and share memorable quotes from your favorite books.
-
-### 🗣️ Community Forum
-- **Discussion Boards:** Engage in conversations with fellow book lovers.
-- **Book Clubs:** Join or create book clubs to discuss your favorite reads.
-- **Reading Challenges:** Participate in reading challenges and set goals to expand your literary horizons.
 
 ## Technologies Used
 
-- **Frontend:** React, Redux, CSS Modules
-- **Backend:** Node.js, Express
-- **Database:** MongoDB
-- **Authentication:** JWT (JSON Web Tokens)
+- **React** (Create React App)
+- **React Router**
+- **Material UI** and custom CSS
+
+The API lives in a separate backend repository. This app talks to it over HTTP using JWT authentication.
+
+## Getting Started
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Configure the API URL** — copy `.env.example` to `.env` and set your backend base URL:
+   ```bash
+   cp .env.example .env
+   ```
+   Example:
+   ```
+   REACT_APP_API_BASE_URL=http://localhost:4000
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm start
+   ```
+
+   The app opens at [http://localhost:3000](http://localhost:3000). Ensure your backend is running and reachable at the URL in `.env`.
+
+4. **Production build:**
+   ```bash
+   npm run build
+   ```
 
 ## Contributing
 
-We welcome contributions from the community! Here's how you can get involved:
-
-1. **Fork the Repository:**
-    Click the "Fork" button at the top of this page to create a copy of this repository under your GitHub account.
-2. **Create a Branch:**
-    ```bash
-    git checkout -b feature-branch
-    ```
-3. **Make Your Changes:**
-    Implement your feature or bug fix.
-4. **Commit and Push:**
-    ```bash
-    git add .
-    git commit -m "Add new feature"
-    git push origin feature-branch
-    ```
-5. **Create a Pull Request:**
-    Open a pull request from your forked repository, describing your changes and why they should be merged.
+1. Fork the repository.
+2. Create a branch: `git checkout -b feature-branch`
+3. Make your changes and commit.
+4. Push and open a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ## Connect with Us
 
@@ -65,8 +74,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Twitter:** [@MyBookShelf](https://twitter.com/MyBookShelf)
 - **Facebook:** [MyBookShelf](https://facebook.com/MyBookShelf)
 - **Instagram:** [@MyBookShelf](https://instagram.com/MyBookShelf)
-
-Join us in building a vibrant community of book enthusiasts! Happy reading! 📖
 
 ## Citations
 
