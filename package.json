@@ -1,9 +1,10 @@
 {
-    "name": "portfolio",
-    "version": "1.0.0",
-    "scripts": {
-    "build": "npm --prefix frontend install frontend && npm --prefix frontend run build",
-    "start-backend": "npm --prefix backend install backend && npm --prefix backend start",
-    "heroku-postbuild": "npm run build"
-    }
+  "name": "mybookshelf-web-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix frontend start",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
+    "test": "npm --prefix frontend test"
+  }
 }
